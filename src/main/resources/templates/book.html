@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borrow Book</title>
+  </head>
+  <body>
+    <form method="post" th:action="@{/book/borrow}">
+      <h1>Enter the details of books to be borrowed</h1>
+      Book ID: <input type="text" id="id" name="id" required /> <br />
+      Book Name: <input type="text" id="name" name="name" /><br />
+      <button type="submit" value="Borrow">Borrow</button><br />
+    </form>
+    <form method="post" th:action="@{/book/return}">
+      Book ID: <input type="text" id="id" name="id" required /> <br />
+      Book Name: <input type="text" id="name" name="name" /><br />
+      <button type="submit" value="Return">Return</button>
+    </form>
+  </body>
+</html>
